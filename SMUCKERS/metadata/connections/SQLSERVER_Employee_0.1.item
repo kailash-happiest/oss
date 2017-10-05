@@ -83,7 +83,7 @@
           <sqlDataType xmi:id="_-JtRMalsEeeDYPYYAYd5MA" name="NCHAR" javaDataType="1" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_HSflIKluEeeDYPYYAYd5MA" name="Persons" id="_HSe-EKluEeeDYPYYAYd5MA" label="Persons" tableType="TABLE" attachedCDC="true" activatedCDC="true">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_HSflIKluEeeDYPYYAYd5MA" name="Persons" id="_HSe-EKluEeeDYPYYAYd5MA" label="Persons" tableType="TABLE">
         <taggedValue xmi:id="_HSflIaluEeeDYPYYAYd5MA" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_HSflIqluEeeDYPYYAYd5MA" name="ID" label="ID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_HSflI6luEeeDYPYYAYd5MA" tag="Comment" value=""/>
