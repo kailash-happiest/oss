@@ -114,7 +114,7 @@
     <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/Kailash/workspace2&quot;" show="false"/>
     <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="read -p &quot;Enter a password&quot; pass&#xA;if test &quot;$pass&quot; = &quot;jerry&quot;&#xA;then&#xA;     echo &quot;Password verified.&quot;&#xA;else&#xA;     echo &quot;Access denied.&quot;&#x9;&#xA;fi"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c echo Hello World!&quot;&#xA;&#xA;read -p &quot;Enter a password&quot; pass&#xA;if test &quot;$pass&quot; = &quot;jerry&quot;&#xA;then&#xA;     &quot;cmd /c echo Hello World!&quot;&#xA;else&#xA;     &quot;cmd /c echo Hello World!&quot;&#xA;fi&quot;"/>
     <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
     <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
