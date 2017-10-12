@@ -109,12 +109,12 @@
     <routinesParameter id="_gXCjMKOFEeexor1v4Dh0dQ" name="TalendString"/>
     <routinesParameter id="_gXa9sKOFEeexor1v4Dh0dQ" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tMsgBox" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+  <node componentName="tMsgBox" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1" show="false"/>
     <elementParameter field="TEXT" name="TITLE" value="&quot;Talend Open Studio&quot;"/>
     <elementParameter field="CLOSED_LIST" name="BUTTONS" value="6"/>
     <elementParameter field="CLOSED_LIST" name="ICON" value="INFORMATION_MESSAGE"/>
-    <elementParameter field="CHECK" name="ANSWER_MASK" value="true"/>
+    <elementParameter field="CHECK" name="ANSWER_MASK" value="false"/>
     <elementParameter field="MEMO" name="QUESTION_LABEL" value="&quot;Are u sure ?&quot;"/>
     <elementParameter field="MEMO" name="MESSAGE" value="&quot;Hello world!&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
