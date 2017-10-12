@@ -166,7 +166,7 @@
     <elementParameter field="CLOSED_LIST" name="BUTTONS" value="6"/>
     <elementParameter field="CLOSED_LIST" name="ICON" value="INFORMATION_MESSAGE"/>
     <elementParameter field="CHECK" name="ANSWER_MASK" value="false"/>
-    <elementParameter field="MEMO" name="QUESTION_LABEL" value="&quot;File Name:&quot; + System.getProperty( &quot;line.separator&quot; )+&#xD;&#xA;&quot;Last Modified Date&quot; + ((Long)globalMap.get(&quot;row1.mtime&quot;))+&#xD;&#xA;&quot;Last Modified Date&quot; + ((String)globalMap.get(&quot;row1.mtime_string&quot;))+&#xD;&#xA;&quot;Are you sure to delete this file&quot;"/>
+    <elementParameter field="MEMO" name="QUESTION_LABEL" value="&quot;File Name:&quot; + (String)globalMap.get(&quot;row1.basename&quot;)) +&quot;\n&quot;+&#xD;&#xA;&quot;Last Modified Date&quot; + ((String)globalMap.get(&quot;row1.mtime_string&quot;))+&quot;\n&quot;+&#xD;&#xA;&quot;Are you sure to delete this file&quot;"/>
     <elementParameter field="MEMO" name="MESSAGE" value="&quot;Hello world!&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMsgBox_1">
@@ -181,13 +181,13 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;We are about to delete&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;tMsgBox_1_RESULT&quot;)).equalsIgnoreCase(&quot;Yes&quot;)"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="&quot;Yes&quot;.equalsIgnoreCase((String)globalMap.get(&quot;tMsgBox_1_RESULT&quot;))"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileProperties_1">
