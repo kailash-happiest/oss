@@ -155,7 +155,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if(TalendDate.compareDate( TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,   TalendDate.addDate(TalendDate.getDate(&quot;yyyy-MM-dd&quot;)&#xA;,&quot;yyyy-MM-dd&quot;,-15,&quot;DD&quot;)),TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string))==1)&#xA;{&#xA;globalMap.put(&quot;basename&quot;, inputrow.basename);&#xA;globalMap.put(&quot;mtime_string&quot;, inputrow.mtime_string);&#xA;globalMap.put(&quot;mtime&quot;, inputrow.mtime);&#xA;&#xA;&#xA;&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if(TalendDate.compareDate( TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,   TalendDate.addDate(TalendDate.getDate(&quot;yyyy-MM-dd&quot;)&#xA;,&quot;yyyy-MM-dd&quot;,-15,&quot;DD&quot;)),TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string))==1)&#xA;{&#xA;globalMap.put(&quot;basename&quot;, row21.basename);&#xA;globalMap.put(&quot;mtime_string&quot;, row21.mtime_string);&#xA;globalMap.put(&quot;mtime&quot;, row21.mtime);&#xA;&#xA;&#xA;&#xA;}&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
