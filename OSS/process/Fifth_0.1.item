@@ -155,7 +155,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if(TalendDate.compareDate( TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,   TalendDate.addDate(TalendDate.getDate(&quot;yyyy-MM-dd&quot;)&#xA;,&quot;yyyy-MM-dd&quot;,-15,&quot;DD&quot;)),TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string))==1)&#xA;{&#xA;globalMap.put(&quot;basename&quot;, row21.basename);&#xA;globalMap.put(&quot;mtime_string&quot;, row21.mtime_string);&#xA;globalMap.put(&quot;mtime&quot;, row21.mtime);&#xA;&#xA;&#xA;&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if(TalendDate.compareDate( TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,   TalendDate.addDate(TalendDate.getDate(&quot;yyyy-MM-dd&quot;)&#xA;,&quot;yyyy-MM-dd&quot;,-15,&quot;DD&quot;)),TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string))==1)&#xA;{&#xA;row1.basename=row21.basename;&#xA;row1.mtime_string=row21.mtime_string;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -175,7 +175,7 @@
     <elementParameter field="CLOSED_LIST" name="ICON" value="INFORMATION_MESSAGE"/>
     <elementParameter field="CHECK" name="ANSWER_MASK" value="false" show="false"/>
     <elementParameter field="MEMO" name="QUESTION_LABEL" value="&quot;File Name:&quot; + ((String)globalMap.get(&quot;row1.basename&quot;)) +&quot;\n&quot;+&#xD;&#xA;&quot;Last Modified Date:&quot; + ((String)globalMap.get(&quot;row1.mtime_string&quot;))+&quot;\n&quot;+&#xD;&#xA;&quot;Are you sure to delete this file&quot;" show="false"/>
-    <elementParameter field="MEMO" name="MESSAGE" value="&quot;File Name:&quot; + ((String)globalMap.get(&quot;basename&quot;)) +&quot;\n&quot;+&#xD;&#xA;&quot;Last Modified Date:&quot; + ((String)globalMap.get(&quot;mtime_string&quot;))+&quot;\n&quot;+&#xD;&#xA;&quot;Are you sure to delete this file?&quot;"/>
+    <elementParameter field="MEMO" name="MESSAGE" value="&quot;File Name:&quot; + row1.basename +&quot;\n&quot;+&#xD;&#xA;&quot;Last Modified Date:&quot; +row1.mtime_string+&quot;\n&quot;+&#xD;&#xA;&quot;Are you sure to delete this file?&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMsgBox_1">
       <column defaultValue="" key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
