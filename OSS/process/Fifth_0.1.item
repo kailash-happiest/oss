@@ -109,15 +109,19 @@
     <routinesParameter id="_gXCjMKOFEeexor1v4Dh0dQ" name="TalendString"/>
     <routinesParameter id="_gXa9sKOFEeexor1v4Dh0dQ" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="int dialogResult = JOptionPane.showConfirmDialog (null, &quot;Would You Like to Save your Previous Note First?&quot;,&quot;Warning&quot;,dialogButton);&#xA;&#xA;&#xA;if(dialogResult == JOptionPane.YES_OPTION){&#xA;  Syste.out.println(&quot;hddsdssd&quot;);&#xA;}"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.*;"/>
+  <node componentName="tMsgBox" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1" show="false"/>
+    <elementParameter field="TEXT" name="TITLE" value="&quot;Talend Open Studio&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="BUTTONS" value="6"/>
+    <elementParameter field="CLOSED_LIST" name="ICON" value="QUESTION_MESSAGE"/>
+    <elementParameter field="CHECK" name="ANSWER_MASK" value="false"/>
+    <elementParameter field="MEMO" name="QUESTION_LABEL" value="&quot;Are u sure ?&quot;"/>
+    <elementParameter field="MEMO" name="MESSAGE" value="&quot;Hello world!&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
+    <metadata connector="FLOW" name="tMsgBox_1"/>
   </node>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
