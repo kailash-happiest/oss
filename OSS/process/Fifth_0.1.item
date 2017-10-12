@@ -187,7 +187,7 @@
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;tMsgBox_1_RESULT&quot;)).equalsIgnoreCase(&quot;Yes&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;tMsgBox_1_RESULT&quot;)).equalsIgnoreCase(&quot;Yes&quot;)"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileProperties_1">
