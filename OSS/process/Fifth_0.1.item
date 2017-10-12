@@ -185,7 +185,7 @@
         <mapperTableEntries name="mode_string" expression="row21.mode_string " type="id_String" nullable="true"/>
         <mapperTableEntries name="size" expression="row21.size " type="id_Long" nullable="true"/>
         <mapperTableEntries name="mtime" expression="row21.mtime " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="mtime_string" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,EEE MMM dd HH:mm:ss z yyyy) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="mtime_string" expression="TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row21" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="abs_path" type="id_String" nullable="true"/>
