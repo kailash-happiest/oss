@@ -178,7 +178,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="row1" expressionFilter="TalendDate.compareDate( TalendDate.parseDate(&quot;CCYY-MM-DD hh:mm:ss&quot;,   TalendDate.addDate(TalendDate.getDate(&quot;CCYY-MM-DD hh:mm:ss&quot;)&#xA;,&quot;yyyy-MM-dd&quot;,-15,&quot;DD&quot;)),TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string) )" activateExpressionFilter="true" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="row1" expressionFilter="if ( (TalendDate.compareDate( TalendDate.parseDate(&quot;CCYY-MM-DD hh:mm:ss&quot;,   TalendDate.addDate(TalendDate.getDate(&quot;CCYY-MM-DD hh:mm:ss&quot;)&#xA;,&quot;yyyy-MM-dd&quot;,-15,&quot;DD&quot;)),TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;,row21.mtime_string) )!=0)" activateExpressionFilter="true" activateCondensedTool="true">
         <mapperTableEntries name="abs_path" expression="row21.abs_path " type="id_String" nullable="true"/>
         <mapperTableEntries name="dirname" expression="row21.dirname " type="id_String" nullable="true"/>
         <mapperTableEntries name="basename" expression="row21.basename " type="id_String" nullable="true"/>
