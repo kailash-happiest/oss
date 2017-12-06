@@ -213,6 +213,8 @@
       <relatedItems xmi:id="_dZK73NpXEeeIWaUXulnPPg" id="Calculation" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dZK73dpXEeeIWaUXulnPPg" id="My_Calculation" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dZK73tpXEeeIWaUXulnPPg" id="_nxp48MRmEeekC9cjpWflYQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4OdhQNptEeeIWaUXulnPPg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4OeIUNptEeeIWaUXulnPPg" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_gJM7gKOFEeexor1v4Dh0dQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_gJM7gaOFEeexor1v4Dh0dQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
