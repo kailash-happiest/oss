@@ -10,6 +10,16 @@
     <componentsSettings xmi:id="_VidEANmjEeeIWaUXulnPPg" name="DI|tDBInput" family="Databases/DB_Generic"/>
     <componentsSettings xmi:id="_VidEAdmjEeeIWaUXulnPPg" name="DI|tDBOutput" family="Databases/DB_Generic"/>
     <componentsSettings xmi:id="_VidEAtmjEeeIWaUXulnPPg" name="DI|tDBSQLRow" family="Databases/DB_Generic"/>
+    <componentsSettings xmi:id="_TADIcNryEeeIWaUXulnPPg" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_TADIcdryEeeIWaUXulnPPg" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_TADIctryEeeIWaUXulnPPg" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_TADIc9ryEeeIWaUXulnPPg" name="DI|tArrayIn" family="Technical"/>
+    <componentsSettings xmi:id="_TcM48NryEeeIWaUXulnPPg" name="DI|tAccessOutputBulkExec" family="Databases/Access"/>
+    <componentsSettings xmi:id="_TcNgANryEeeIWaUXulnPPg" name="DI|tAccessBulkExec" family="Databases/Access"/>
+    <componentsSettings xmi:id="_TcNgAdryEeeIWaUXulnPPg" name="DI|tDBSQLRow" family="Databases/DB_Generic"/>
+    <componentsSettings xmi:id="_TcPVMNryEeeIWaUXulnPPg" name="DI|tDBOutput" family="Databases/DB_Generic"/>
+    <componentsSettings xmi:id="_TcP8QNryEeeIWaUXulnPPg" name="DI|tDBInput" family="Databases/DB_Generic"/>
+    <componentsSettings xmi:id="_T2vf4NryEeeIWaUXulnPPg" name="DI|tSAPIDocInput" family="Business/SAP"/>
     <statAndLogsSettings xmi:id="_jSF2ENmeEeeIWaUXulnPPg">
       <parameters xmi:id="_jSGdINmeEeeIWaUXulnPPg">
         <elementParameter xmi:id="_jV7NMNmeEeeIWaUXulnPPg" field="CHECK" name="UPDATE_COMPONENTS" value="false" contextMode="false"/>
