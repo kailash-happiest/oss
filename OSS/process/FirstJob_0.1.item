@@ -187,11 +187,11 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="VALUE" value="(Integer)globalMap.get(row1.id)"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;row1.id&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
-      <elementValue elementRef="VALUE" value="(String)globalMap.get(row1.name)"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row1.name&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
-      <elementValue elementRef="VALUE" value="(String)globalMap.get(row1.country)"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row1.country&quot;)"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
