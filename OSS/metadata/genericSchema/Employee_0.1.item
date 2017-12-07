@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_DjQYYNr0EeeIWaUXulnPPg" comment="connectionComment" label="connectionLabel" dataPackage="_DjQYYdr0EeeIWaUXulnPPg" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_DjQYYdr0EeeIWaUXulnPPg" dataManager="_DjQYYNr0EeeIWaUXulnPPg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DjQYYtr0EeeIWaUXulnPPg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DjQYY9r0EeeIWaUXulnPPg" name="id" id="1648" label="id" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_DjQYZNr0EeeIWaUXulnPPg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DjQYZdr0EeeIWaUXulnPPg" name="name" id="1649" label="name" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_DjQYZtr0EeeIWaUXulnPPg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DjQYZ9r0EeeIWaUXulnPPg" name="country" id="1650" label="country" length="5" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_DjQYaNr0EeeIWaUXulnPPg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
