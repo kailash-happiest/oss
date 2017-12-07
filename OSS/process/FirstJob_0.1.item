@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -105,168 +105,141 @@
     <routinesParameter id="_gXCjMKOFEeexor1v4Dh0dQ" name="TalendString"/>
     <routinesParameter id="_gXa9sKOFEeexor1v4Dh0dQ" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
-      <elementValue elementRef="VALUE" value="&quot;Españfl&quot;"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="" show="false"/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="7" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tFlowMeter_4"/>
+  </node>
+  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIterateToFlow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TABLE" name="MAPPING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tIterateToFlow_1"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_D4fukL_XEeeW95ga_ZD5RA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Test&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customers&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `customers`.`id`, &#xA;  `customers`.`name`, &#xA;  `customers`.`country`&#xA;FROM `customers`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customers" name="tMysqlInput_1">
+      <column comment="" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
-    <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
-    <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
-    <elementParameter field="TABLE" name="CHECKCOLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-    </elementParameter>
-    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema." show="false"/>
-    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
-    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
-    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
-    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
-    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#xA;(1) Type discrepancy (include wrong date pattern): 2&#xA;(2) Empty or NULL: 4&#xA;(3) Length/Precision Error: 8"/>
-    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
-    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="EMPTY_IS_NULL" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
-    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSchemaComplianceCheck_1">
-      <column comment="" key="false" length="7" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OTHER" name="OTHER"/>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="7" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="7" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="customers" name="tLogRow_1">
+      <column comment="" key="true" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_h3DEMKzXEeeV8Ybk_tuyDQ" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Employee&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;test123&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
-    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="newColumn" show="false"/>
-    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
-    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="SQLSERVER"/>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlOutput_1">
-      <column comment="" key="false" length="7" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="7" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="7" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="7" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tSchemaComplianceCheck_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tMSSqlOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row3" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
-  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIterateToFlow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
