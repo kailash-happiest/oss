@@ -660,7 +660,7 @@
   <node componentName="tAssert" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAssert_1" show="false"/>
     <elementParameter field="TEXT" name="DESCRIPTION" value="&quot;Number of product is grater then expected&quot;"/>
-    <elementParameter field="MEMO_JAVA" name="EXPRESSION" value="((Integer)globalMap.get(&quot;tFixedFlowInput_2_NB_LINE&quot;))>10"/>
+    <elementParameter field="MEMO_JAVA" name="EXPRESSION" value="((Integer)globalMap.get(&quot;tFixedFlowInput_2_NB_LINE&quot;))>20"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tAssert_1">
       <column comment="" key="false" length="-1" name="ProductID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
