@@ -110,7 +110,7 @@
   <node componentName="tForeach" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tForeach_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="VALUE" value="1"/>
+      <elementValue elementRef="VALUE" value="&quot;Kailash&quot;"/>
       <elementValue elementRef="VALUE" value="2"/>
       <elementValue elementRef="VALUE" value="3"/>
       <elementValue elementRef="VALUE" value="4"/>
