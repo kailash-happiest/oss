@@ -131,6 +131,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tForeach_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="VALUE" value="1"/>
+      <elementValue elementRef="VALUE" value="2"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
