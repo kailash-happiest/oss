@@ -195,6 +195,8 @@
       <relatedItems xmi:id="_dZKUzNpXEeeIWaUXulnPPg" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dZKUzdpXEeeIWaUXulnPPg" id="Calculation" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dZKUztpXEeeIWaUXulnPPg" id="My_Calculation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_FsTSMNvpEeeIWaUXulnPPg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_FsTSMdvpEeeIWaUXulnPPg" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_dZKUz9pXEeeIWaUXulnPPg">
       <baseItem xmi:id="_dZKU0NpXEeeIWaUXulnPPg" id="_i-UooMH8EeeC4oq6rGsxGw" version="0.1" type="job"/>
