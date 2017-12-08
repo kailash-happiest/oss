@@ -255,7 +255,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="22"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;kailash&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="miWFJDI2NfNVKtwmn3dJtQ=="/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
