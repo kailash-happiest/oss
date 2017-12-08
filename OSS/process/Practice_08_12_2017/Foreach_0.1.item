@@ -107,11 +107,14 @@
     <routinesParameter id="_gXa9sKOFEeexor1v4Dh0dQ" name="TalendStringUtil"/>
     <routinesParameter id="_gXCjMKOFEeexor1v4Dh0dQ" name="TalendString"/>
   </parameters>
-  <node componentName="tForeach" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+  <node componentName="tForeach" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tForeach_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="VALUE" value="&quot;File1&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;File2&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;newLine&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;newLine&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;newLine&quot;"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
