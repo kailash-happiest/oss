@@ -170,14 +170,14 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output">
-        <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="age" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="city" type="id_String" nullable="true"/>
-        <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="id" expression="row1.id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="name" expression="row1.name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="age" expression="row1.age" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="city" expression="row1.city" type="id_String" nullable="true"/>
+        <mapperTableEntries name="state" expression="row1.state" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
