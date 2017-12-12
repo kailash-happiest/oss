@@ -105,7 +105,7 @@
     <routinesParameter id="_gXa9sKOFEeexor1v4Dh0dQ" name="TalendStringUtil"/>
     <routinesParameter id="_gXCjMKOFEeexor1v4Dh0dQ" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Kailash/Documents/Talend Study Center/Use Cases/Files/Assignment.csv&quot;"/>
