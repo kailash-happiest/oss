@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_goJfMN-7Eeel6efZrUu1PA" name="employee" dataPackage="_gxXsoN-7Eeel6efZrUu1PA" Server="Localhost 127.0.0.1" FilePath="C:/Users/Kailash/Documents/case-studies/Modules/Files2/SampleFile.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_gxXsoN-7Eeel6efZrUu1PA" name="default" dataManager="_goJfMN-7Eeel6efZrUu1PA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_gxXsod-7Eeel6efZrUu1PA" id="_CQTXAN-7Eeel6efZrUu1PA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gxXsot-7Eeel6efZrUu1PA" label="first_name" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gxXso9-7Eeel6efZrUu1PA" label="last_name" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gxXspN-7Eeel6efZrUu1PA" label="city" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gxXspd-7Eeel6efZrUu1PA" label="address" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
