@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendMetadata:DatabaseConnection xmi:id="_D0xLsN_BEeel6efZrUu1PA" name="mydb" id="_uCz7QN_AEeel6efZrUu1PA" label="mydb" dataPackage="_D_o-8N_BEeel6efZrUu1PA _D_3BYN_BEeel6efZrUu1PA _D_3BYd_BEeel6efZrUu1PA _D_3BYt_BEeel6efZrUu1PA _D_3BY9_BEeel6efZrUu1PA _D_3BZN_BEeel6efZrUu1PA _D_3BZd_BEeel6efZrUu1PA _D_3BZt_BEeel6efZrUu1PA _D_3BZ9_BEeel6efZrUu1PA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://127.0.0.1:3306/?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="NZNgK6DuncI=" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_D1K0UN_BEeel6efZrUu1PA" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_D1tm4N_BEeel6efZrUu1PA" tag="package filter" value=""/>
@@ -22,5 +22,35 @@
   <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZN_BEeel6efZrUu1PA" name="sys" dataManager="_D0xLsN_BEeel6efZrUu1PA"/>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZd_BEeel6efZrUu1PA" name="tac" dataManager="_D0xLsN_BEeel6efZrUu1PA"/>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZt_BEeel6efZrUu1PA" name="test" dataManager="_D0xLsN_BEeel6efZrUu1PA"/>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZ9_BEeel6efZrUu1PA" name="world" dataManager="_D0xLsN_BEeel6efZrUu1PA"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZ9_BEeel6efZrUu1PA" name="world" dataManager="_D0xLsN_BEeel6efZrUu1PA">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Y2NlMN_BEeel6efZrUu1PA" name="city" id="_Y1tO4N_BEeel6efZrUu1PA" label="city" tableType="TABLE">
+      <taggedValue xmi:id="_Y2OMQN_BEeel6efZrUu1PA" tag="Comment" value=""/>
+      <taggedValue xmi:id="_Y2OMQd_BEeel6efZrUu1PA" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_Y2OMQt_BEeel6efZrUu1PA" name="ID" label="ID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <taggedValue xmi:id="_Y2OMQ9_BEeel6efZrUu1PA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_Y2OMRN_BEeel6efZrUu1PA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_Y2OMRd_BEeel6efZrUu1PA" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_Y2OMRt_BEeel6efZrUu1PA" name="Name" label="Name" length="35" sourceType="CHAR" talendType="id_String" nullable="false">
+        <taggedValue xmi:id="_Y2OMR9_BEeel6efZrUu1PA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_Y2OMSN_BEeel6efZrUu1PA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_Y2OMSd_BEeel6efZrUu1PA" name="CHAR" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_Y2OMSt_BEeel6efZrUu1PA" name="CountryCode" label="CountryCode" length="3" sourceType="CHAR" talendType="id_String" nullable="false">
+        <taggedValue xmi:id="_Y2OMS9_BEeel6efZrUu1PA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_Y2OMTN_BEeel6efZrUu1PA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_Y2OMTd_BEeel6efZrUu1PA" name="CHAR" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_Y2OMTt_BEeel6efZrUu1PA" name="District" label="District" length="20" sourceType="CHAR" talendType="id_String" nullable="false">
+        <taggedValue xmi:id="_Y2OMT9_BEeel6efZrUu1PA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_Y2OMUN_BEeel6efZrUu1PA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_Y2OMUd_BEeel6efZrUu1PA" name="CHAR" numericPrecisionRadix="10" javaDataType="1"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_Y2OMUt_BEeel6efZrUu1PA" name="Population" label="Population" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <taggedValue xmi:id="_Y2OMU9_BEeel6efZrUu1PA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_Y2OMVN_BEeel6efZrUu1PA" body="0" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_Y2OMVd_BEeel6efZrUu1PA" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
