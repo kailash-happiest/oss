@@ -23,7 +23,7 @@
   <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZd_BEeel6efZrUu1PA" name="tac" dataManager="_D0xLsN_BEeel6efZrUu1PA"/>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZt_BEeel6efZrUu1PA" name="test" dataManager="_D0xLsN_BEeel6efZrUu1PA"/>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_D_3BZ9_BEeel6efZrUu1PA" name="world" dataManager="_D0xLsN_BEeel6efZrUu1PA">
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_Y2NlMN_BEeel6efZrUu1PA" name="city" id="_Y1tO4N_BEeel6efZrUu1PA" label="city" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Y2NlMN_BEeel6efZrUu1PA" name="city" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_Y1tO4N_BEeel6efZrUu1PA" label="city" tableType="TABLE">
       <taggedValue xmi:id="_Y2OMQN_BEeel6efZrUu1PA" tag="Comment" value=""/>
       <taggedValue xmi:id="_Y2OMQd_BEeel6efZrUu1PA" tag="Comment" value=""/>
       <feature xsi:type="relational:TdColumn" xmi:id="_Y2OMQt_BEeel6efZrUu1PA" name="ID" label="ID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
