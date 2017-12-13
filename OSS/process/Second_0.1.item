@@ -253,7 +253,7 @@
       <elementValue elementRef="INPUT_COLUMN" value="city"/>
       <elementValue elementRef="FUNCTION" value=""/>
       <elementValue elementRef="OPERATOR" value="=="/>
-      <elementValue elementRef="RVALUE" value="Avalon"/>
+      <elementValue elementRef="RVALUE" value="&quot;Avalon&quot;"/>
     </elementParameter>
   </connection>
   <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
