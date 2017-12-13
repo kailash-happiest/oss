@@ -249,6 +249,16 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="true"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="first_name"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;Mollie&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="city"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;Avalon&quot;"/>
+    </elementParameter>
   </connection>
   <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
